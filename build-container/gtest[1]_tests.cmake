@@ -1,0 +1,7 @@
+add_test( Pythagoras.Norm /workspaces/lab-01-GandhiYogesh/build-container/gtest [==[--gtest_filter=Pythagoras.Norm]==] --gtest_also_run_disabled_tests)
+set_tests_properties( Pythagoras.Norm PROPERTIES WORKING_DIRECTORY /workspaces/lab-01-GandhiYogesh/build-container)
+add_test( Pythagoras.Distance /workspaces/lab-01-GandhiYogesh/build-container/gtest [==[--gtest_filter=Pythagoras.Distance]==] --gtest_also_run_disabled_tests)
+set_tests_properties( Pythagoras.Distance PROPERTIES WORKING_DIRECTORY /workspaces/lab-01-GandhiYogesh/build-container)
+add_test( Pythagoras.ScalarProduct /workspaces/lab-01-GandhiYogesh/build-container/gtest [==[--gtest_filter=Pythagoras.ScalarProduct]==] --gtest_also_run_disabled_tests)
+set_tests_properties( Pythagoras.ScalarProduct PROPERTIES WORKING_DIRECTORY /workspaces/lab-01-GandhiYogesh/build-container)
+set( gtest_TESTS Pythagoras.Norm Pythagoras.Distance Pythagoras.ScalarProduct)
